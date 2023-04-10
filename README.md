@@ -1,1 +1,9 @@
-0x03. AirBnB clone - Deploy static
+0x02. AirBnB clone - MySQL
+ALX Group project
+Python
+OOP
+Back-end
+SQL
+MySQL
+ORM
+SQLAlchemy
