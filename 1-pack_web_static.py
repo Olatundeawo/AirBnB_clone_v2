@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ a python script that generates .tgz
 """
-from fabric.operations import local
+from fabric.api import local
 from datatime import datetime as d
 
 
