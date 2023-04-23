@@ -23,6 +23,7 @@ def text(text):
     """ display 'C followed by the value of text' """
     return 'C {}'.format(text.replace('_',' '))
 
+
 @app.route('python/', defaults={'text': 'is cool'})
 @app.route('/python/<string:text', strict_slashes=False)
 def python_text(text):
