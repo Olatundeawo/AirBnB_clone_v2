@@ -19,7 +19,7 @@ def teardown_context(exception):
 @app.route('/states_list', strict_slashes=False)
 def state():
     """ display a list of states from a db into a HTML page """
-    places = storage.all(state).values()
+    places = storage.all(State).values()
     return render_template('7-states_list.html', places=places)
 
 if __name__ == '__main__':
