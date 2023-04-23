@@ -16,7 +16,7 @@ def teardown_context(exception):
 @app.route('/cities_by_states', strict_slashes=False)
 def cities():
     """ list all the cities in a state """
-    places = storage.all(State.cities).values()
+    places = storage.all(State).values()
     return render_template('8-cities_by_states.html', places=places)
 
 if __name__ == '__main__':
