@@ -18,8 +18,8 @@ def hbnb():
     return 'HBNB'
 
 
-@app.route('/c/<text>')
-def text():
+@app.route('/c/<string.text>', strict_slashes=False)
+def text(text):
     """ display 'C followed by the value of text' """
     return 'C %s' % text.replace('_',' ')
 
