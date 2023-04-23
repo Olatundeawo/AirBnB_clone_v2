@@ -25,7 +25,7 @@ def text(text):
 
 
 @app.route('/python/<string:text', strict_slashes=False)
-def python_text(text='is cool'):
+def python_text(text):
     """ display python followed by value of text variable """
     return 'python {}'.format(text.replace('_', ' '))
 
