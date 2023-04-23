@@ -24,7 +24,6 @@ def text(text):
     return 'C {}'.format(text.replace('_', ' '))
 
 
-@app.route("/python")
 @app.route('/python/<string:text>', strict_slashes=False)
 def python_text(text='is cool'):
     """ display python followed by value of text """
